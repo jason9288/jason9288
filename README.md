@@ -1,7 +1,7 @@
 # JASON9288 
 ## Hello there👋
 
-[HYU](https://hanyang.ac.kr/) [CSE](http://cs.hanyang.ac.kr/eng/) 23 🙌  
+[HYU](https://hanyang.ac.kr/) [CSE](http://cs.hanyang.ac.kr/eng/) 🙌  
 
 <br> 
 
