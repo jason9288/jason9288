@@ -1,11 +1,4 @@
 import sys
-def count_f(list):
-    cnt = 0
-    for i in range(1, 10):
-        if i in list:
-            cnt += 1
-    return cnt
-
 n = int(input())
 fruit = list(map(int, sys.stdin.readline().split()))
 
