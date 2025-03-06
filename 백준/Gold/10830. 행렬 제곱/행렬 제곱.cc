@@ -4,7 +4,7 @@
 typedef unsigned long long ull;
 using namespace std;
     
-// dp[0] = A, dp[1] = A^2, ...
+// dp[0] = A, dp[1] = A^2, dp[2] = A^4...
 vector<vector<vector<ull>>> Apow2;
 int n;
 
@@ -69,26 +69,8 @@ int main() {
         return 0;
     }
 
-    // for (int i = 0; i < n; i++) {
-    //     for (int j = 0; j < n; j++){
-    //         cout << A[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-
     Apow2.push_back(A);
     dp_initial(A);
-
-    // for (int i = 0; i < 6; i++) {
-    //     cout << "A ^ " << pow(2, i) << endl;
-    //     for (int j = 0; j < n; j++) {
-    //         for (int k = 0; k < n; k++) {
-    //             cout << Apow2[i][j][k] % 1000 << " ";
-    //         }
-    //         cout << endl;
-    //     }
-    //     cout << endl << endl;
-    // }
 
     ull temp_b = b;
     vector<vector<ull>> M(n, vector<ull>(n, 0));
@@ -98,17 +80,9 @@ int main() {
 
     if (temp_b != 0) {
         while (true) {
-            // cout << "b : " << temp_b << endl;
             if (temp_b == 0) break;
             int maxI = getMax2Pow(temp_b);
-            // cout << "maxI : " << maxI << endl;
             M = matrix_multi(Apow2[maxI], M);
-            // for (int i = 0; i < n; i++) {
-            //     for (int j = 0; j < n; j++) {
-            //         cout << M[i][j] % 1000 << " ";
-            //     }
-            //     cout << endl;
-            // }
             temp_b -= (1ULL << maxI);
         } 
     }
