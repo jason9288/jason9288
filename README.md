@@ -1,5 +1,4 @@
-# JASON9288 
-## Hello there👋
+# Kitae Kim
 
 [HYU](https://hanyang.ac.kr/) [CSE](http://cs.hanyang.ac.kr/eng/) 🙌  
 
